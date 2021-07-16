@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "qf_active_name": "/components/active_item/active_item"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30
+}

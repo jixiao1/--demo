@@ -1,0 +1,7 @@
+<view class="dq_item_container">
+   <view class="dq_item_left">
+   </view>
+   <view class="dq_item_right">
+     <image src="{{item.src}}"/>
+   </view>
+</view>

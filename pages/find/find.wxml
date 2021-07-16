@@ -1,0 +1,14 @@
+
+<view>
+  <button bindtap="tapLocaltion" wx:if="{{!isShow}}">获取地理定位</button>
+  <map id="map"
+  longitude="{{user.longitude}}"
+  latitude="{{user.latitude}}"
+  scale="12"
+  show-location></map>
+  <view>去这里：后瑞地铁站</view>
+  <view>
+    <button bindtap="goHere">去这里</button>
+  </view>
+  <view bindtap="callPhone">咨询打电话</view>
+</view>

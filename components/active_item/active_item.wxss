@@ -1,0 +1,45 @@
+.qf-index {
+  background-color: red;
+}
+.dq_item_container {
+  width: 750rpx;
+  height: 300rpx;
+  /* background-color: red; */
+  display: flex;
+  margin: 25rpx 0;
+}
+.dq_item_left {
+  flex: 460;
+  /* background-color: lightblue; */
+}
+.dq_item_right {
+  flex: 230;
+  /* background-color: lightcoral; */
+}
+.dq_item_right image {
+  width: 300rpx;
+  height: 300rpx;
+  background-size: 100% 100%;
+  display: block;
+}
+/* 分享 */
+.qf-index-share {
+  position: fixed;
+  bottom: 135rpx;
+  right: 25rpx;
+  overflow: hidden;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: red;
+  border-radius: 50%;
+  padding: 15rpx;
+  z-index: 999;
+}
+.qf-index-share button {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}

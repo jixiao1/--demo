@@ -1,0 +1,10 @@
+.box {
+  width: 100%;
+  height: 300rpx;
+  background: red;
+  line-height: 300rpx;
+  text-align: center;
+}
+.getuser {
+  margin-top: 10rpx;
+}

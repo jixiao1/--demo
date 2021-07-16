@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/find/find",
+    "pages/user/user" ,
+    "pages/index/index",
+    "pages/shop/shop"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#33ec49",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "展会活动",
+        "iconPath":"assets/icon/activity.png",
+        "selectedIconPath": "assets/icon/activity-on.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现宝贝",
+        "iconPath":"assets/icon/find.png",
+        "selectedIconPath": "assets/icon/find-on.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "发现宝贝",
+        "iconPath":"assets/icon/shop.png",
+        "selectedIconPath": "assets/icon/shop-on.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为了更好的用户的体验感，需要获取你的地理定位"
+    }
+  }
+}

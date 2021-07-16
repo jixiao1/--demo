@@ -1,0 +1,76 @@
+<view class="qf-index">
+  <swiper class="swiper_img_item"
+        indicator-dots="{{true}}"
+        autoplay="{{true}}"
+        interval="{{4000}}"
+        duration="{{500}}"
+       indicator-color="rgba(255, 255, 255, .3)"
+       indicator-active-color="rgba(0,0,0,.5)">
+          <swiper-item
+          wx:for="{{imgArr}}"
+          wx:key="item"
+         >
+             <image src="{{item.src}}" class="item_img" />
+          </swiper-item>
+      </swiper>
+
+      <view class="search">
+        <input placeholder="{{pla}}" disabled />
+        <image src='{{img.searchIcon}}' />
+  </view>
+  <view class="fliter">
+  <!-- <view class="section__title">普通选择器</view> -->
+ <view class="filter_item">
+    <picker bindchange="bindPickerChange"
+      value="{{setIndex}}"
+      range="{{activityArr}}"
+      range-key="label">
+        <view class="picker">
+          {{activityArr[setIndex].label}}
+          <image src='../../assets/arrow.png' />
+        </view>
+  </picker>
+ </view>
+ <view class="filter_item">
+    <picker bindchange="bindPickerChange"
+      value="{{setIndex}}"
+      range="{{activityArr}}"
+      range-key="label">
+        <view class="picker">
+          {{activityArr[setIndex].label}}
+        </view>
+  </picker>
+ </view>
+ <view class="filter_item">
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      {{region[0]}}{{region[1]}}{{region[2]}}
+      <!-- {{region[0]}}{{region[1]}} -->
+    </view>
+  </picker>
+ </view>
+ <view class="filter_item">
+    <picker mode="date" 
+    value="{{date}}"
+    start="2015-09-01"
+    end="2017-09-01"
+    bindchange="bindDateChange">
+    <view class="picker">
+      {{date2}}
+    </view>
+  </picker>
+ </view>
+</view>
+<!-- 活动列表 -->
+<!-- 活动列表 -->
+  <view>
+    <block wx:for="{{list}}" wx:key="item">
+      <qf_active_name item="{{item}}"></qf_active_name>
+    </block>
+    
+  </view>
+  <!-- 自定义按钮转发 -->
+  <view class="qf-index-share">
+    <button type="primary" open-type="share">转发</button>
+  </view>
+</view>

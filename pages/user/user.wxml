@@ -1,0 +1,27 @@
+<!--pages/user/user.wxml-->
+<!-- <text>pages/user/user.wxml</text> -->
+<view>
+ <view class="box">hello world</view>
+ <view>
+   <button open-type="contact">联系客服</button>
+ </view>
+ <!-- openSetting -->
+  <view style="margin-top: 10rpx;">
+     <button open-type="feedback">反馈意见</button>
+ </view>
+  <view style="margin-top: 10rpx;">
+     <button open-type="openSetting">授权</button>
+ </view>
+ <view style="margin-top: 10rpx;">
+     <button open-type="getPhoneNumber" bindgetphonenumber="getMobile">获取手机号</button>
+ </view>
+ <view class="getuser">
+   <button open-type="getUserInfo" bindgetuserinfo="getuserinfo">获取用户信息</button>
+ </view>
+ <view>
+   <image src="{{user.userInfo.avatarUrl}}"/>
+ </view>
+ <view style="text-align: center;">
+  {{user.userInfo.nickName}}
+ </view>
+</view>
